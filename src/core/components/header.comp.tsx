@@ -11,7 +11,7 @@ export default function HeaderComp() {
     const pathname = usePathname()
     return (
         <div className="w-full bg-[#FAF9F8]">
-            <div className="bg-[#FFFFFF] w-full">
+            <div className="w-full bg-[#FFFFFF]">
                 <div className="px-5 sm:px-10 md:px-16 lg:px-20 py-4 sm:py-6">
                     <div className="flex flex-col min-[1401px]:flex-row items-start min-[1401px]:items-center gap-y-5">
                         <div className="shrink-0 flex justify-start">
