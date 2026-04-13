@@ -1,24 +1,14 @@
-'use client';
+'use client'
 
-import Image from "next/image";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
-import { Typography } from "@/src/core/ui/typography.ui";
-import { cn } from "@/src/lib/utils";
-
-const menuItems = [
-    { label: "Главная", path: "/" },
-    { label: "Услуги", path: "/services" },
-    { label: "Документы", path: "/documents" },
-    { label: "Отзывы", path: "/reviews" },
-    { label: "Партнеры", path: "/partners" },
-    { label: "Новости", path: "/news" },
-    { label: "Мастерские", path: "/workshops" },
-    { label: "Контакты", path: "/contacts" }
-];
+import Image from "next/image"
+import { usePathname } from "next/navigation"
+import Link from "next/link"
+import { Typography } from "@/src/core/ui/typography.ui"
+import {cn} from "@/src/lib/utils"
+import {menuItems} from "@/src/core/constants/menu-items"
 
 export default function HeaderComp() {
-    const pathname = usePathname();
+    const pathname = usePathname()
     return (
         <div className="w-full bg-[#FAF9F8]">
             <div className="bg-[#FFFFFF] w-full">
@@ -36,7 +26,7 @@ export default function HeaderComp() {
                         </div>
                         <nav className="flex flex-wrap items-center justify-start min-[1401px]:justify-end w-full gap-x-4 md:gap-x-6 lg:gap-x-8 xl:gap-x-10 mt-5 min-[1401px]:mt-0">
                             {menuItems.map(({ label, path }) => {
-                                const isActive = pathname === path;
+                                const isActive = pathname === path
                                 return (
                                     <Link
                                         key={path}
@@ -50,13 +40,13 @@ export default function HeaderComp() {
                                             {label}
                                         </Typography>
                                     </Link>
-                                );
+                                )
                             })}
                         </nav>
                     </div>
                 </div>
             </div>
-            <div className="min-h-screen px-5 sm:px-10 md:px-16 lg:px-20 mt-6 sm:mt-8 lg:mt-10">
+            <div className="px-5 sm:px-10 md:px-16 lg:px-20 mt-6 sm:mt-8 lg:mt-10">
                 <Typography
                     tag="h1"
                     size="extrabold-56"
