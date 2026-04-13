@@ -2,11 +2,11 @@
 
 import {NextPage} from "next";
 import HeaderComp from "@/src/core/components/header.comp";
-import {PartnersBlockComp} from "@/src/domains/partners/components/partners-block.comp";
 import FooterComp from "@/src/core/components/footer.comp";
 import {Typography} from "@/src/core/ui/typography.ui";
+import {ReviewsBlockComp} from "@/src/domains/reviews/components/reviews-block.comp";
 
-const PartnersPage: NextPage = () => {
+const ReviewsPage: NextPage = () => {
     return (
         <div className="flex flex-col w-full min-h-screen bg-[#FAF9F8]">
             <HeaderComp />
@@ -17,13 +17,13 @@ const PartnersPage: NextPage = () => {
                     fontColor="blue"
                     className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
                 >
-                    Партнеры
+                    Отзывы клиентов
                 </Typography>
             </div>
-            <PartnersBlockComp />
+            <ReviewsBlockComp />
             <FooterComp />
         </div>
     )
 }
 
-export default PartnersPage
+export default ReviewsPage

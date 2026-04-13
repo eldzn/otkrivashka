@@ -16,7 +16,7 @@ export default function FooterComp() {
                             </Typography>
                         </div>
                         <Typography size="medium-16" fontColor="white">
-                            г.Иркутск, Ул. Лермонтова, д.309 (Академгородок)
+                            г. Иркутск, ул. Лермонтова, д.309 (Академгородок)
                         </Typography>
 
                         <Typography size="medium-16" fontColor="white">
@@ -38,6 +38,13 @@ export default function FooterComp() {
                         </div>
                     </div>
                 </div>
+                <Typography
+                    size="medium-16"
+                    fontColor="white"
+                    className="text-center mt-6"
+                >
+                    © 2026 Открывашка — вскрытие и ремонт замков в Иркутске
+                </Typography>
             </div>
         </footer>
     )

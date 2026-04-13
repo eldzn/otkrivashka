@@ -46,16 +46,6 @@ export default function HeaderComp() {
                     </div>
                 </div>
             </div>
-            <div className="px-5 sm:px-10 md:px-16 lg:px-20 mt-6 sm:mt-8 lg:mt-10">
-                <Typography
-                    tag="h1"
-                    size="extrabold-56"
-                    fontColor="blue"
-                    className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl"
-                >
-                    Партнеры
-                </Typography>
-            </div>
         </div>
     );
 }
